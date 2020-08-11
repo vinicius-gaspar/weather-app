@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/images/background-landscape.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: 'Rowdies', cursive;
+    color: white;
+}
+
+#container {
+    /* centering  */
+    margin: 35vh auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-area {
+    margin-bottom: 4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-area input {
+    font-size: 3rem;
+    border-radius: 2rem 0 2rem 0;
+    opacity: 0.5;
+    outline: none;
+    text-align: center;
+}
+
+.search-area input::placeholder {
+    color: black;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    opacity: 0.5;
+}
+
+.search-area input:focus {
+    opacity: 0.85;
+    border-bottom: 0.4rem solid red;
+}
+
+.btn-box {
+    background-color: orange;
+    margin-left: 1.2rem;
+
+    padding: 0rem 3rem;
+    border-radius: 2rem 0 2rem 0;
+}
+
+.btn-box:hover {
+    background-color: rgb(245, 177, 51);
+}
+
+.btn-box a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.result-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: black 5px 5px;
+}
+
+.location-area {
+    font-size: 4rem;
+}
+
+.temperature-area {
+    font-size: 8rem;
+    margin-top: 4rem;
+}
+
+@media(max-width: 700px) {
+
+    .search-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-box {
+        background-color: orange;
+        margin-top: 1rem;
+    
+        padding: 0rem 3rem;
+        border-radius: 2rem 0 2rem 0;
+    }
+
+}

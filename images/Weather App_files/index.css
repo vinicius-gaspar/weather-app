@@ -86,12 +86,6 @@ body {
 .temperature-area {
     font-size: 8rem;
     margin-top: 4rem;
-    display: flex;
-    align-items: center;
-}
-
-.temperature-area span {
-    margin-left: 1rem;
 }
 
 @media(max-width: 700px) {

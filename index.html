@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <title>Weather App</title>
 </head>
@@ -16,25 +17,24 @@
             <input type="text" placeholder="Search a location" class="text-box">
 
             <div class="btn-box">
-                <a href="#">Search</a>
+                <a href="#" onclick="GetTemperature()">Search</a>
             </div>
 
         </div>
 
         <div class="result-area">
             <div class="location-area">
-                <p>Guarulhos, SP</p>
+                <p id="location-text">Guarulhos, BR</p>
             </div>
     
             <div class="temperature-area">
-                <p>
-                    25 <span>°C</span>
+                <p id="temperature-text">
+                    25 
                 </p>
+                <span>°C</span>
             </div>
         </div>
         
     </div>
-
-
 </body>
 </html>
